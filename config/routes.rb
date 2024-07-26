@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  resources :locations, only: [:index]
+  get 'get_location', to: "locations#get_location"
 end
