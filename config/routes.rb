@@ -7,3 +7,4 @@ Rails.application.routes.draw do
   resources :locations, only: [:index]
   get 'get_location', to: "locations#get_location"
 end
+
